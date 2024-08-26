@@ -4,7 +4,7 @@ pub mod agent_error;
 pub(crate) mod builder;
 pub mod http_transport;
 pub(crate) mod nonce;
-pub(crate) mod response_authentication;
+pub mod response_authentication;
 pub mod status;
 
 pub use agent_config::AgentConfig;
