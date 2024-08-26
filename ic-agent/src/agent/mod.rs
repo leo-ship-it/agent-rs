@@ -365,7 +365,7 @@ impl Agent {
         serde_cbor::from_slice(&bytes).map_err(AgentError::InvalidCborData)
     }
 
-    async fn read_state_endpoint<A>(
+    pub async fn read_state_endpoint<A>(
         &self,
         effective_canister_id: Principal,
         serialized_bytes: Vec<u8>,
