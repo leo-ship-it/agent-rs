@@ -77,7 +77,7 @@ pub(crate) fn lookup_subnet_metrics<Storage: AsRef<[u8]>>(
     Ok(serde_cbor::from_slice(metrics)?)
 }
 
-pub(crate) fn lookup_request_status<Storage: AsRef<[u8]>>(
+pub fn lookup_request_status<Storage: AsRef<[u8]>>(
     certificate: Certificate<Storage>,
     request_id: &RequestId,
 ) -> Result<RequestStatusResponse, AgentError> {
